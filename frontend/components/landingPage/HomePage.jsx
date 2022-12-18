@@ -13,7 +13,8 @@ const Home = () => {
 		console.log('clicked on walletconnect button');
 	};
 	const getAWalletBtn = async () => {
-		console.log('clicked on getAWallet button');
+		const url = 'https://metamask.io/';
+		window.open(url, '_blank');
 	};
 	const lensBtn = async () => {
 		console.log('clicked on lens button');
