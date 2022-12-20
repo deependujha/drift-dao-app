@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ExitButton = () => {
   return (
-    <div className="absolute bottom-20 right-12">
+    <div className="bottom-20 right-12">
       <a href="#">
         <Image
           src="/mainPageLogo/forward-button.png"

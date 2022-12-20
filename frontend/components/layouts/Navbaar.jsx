@@ -16,8 +16,8 @@ const Navbar_01 = ({ currLeft, currRight }) => {
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        <div className="text-xl italic text-white">
-          {currLeft}__{currRight}
+        <div className="text-xl  text-blue-500">
+          {currLeft} - {currRight}
         </div>
       </Navbar.Collapse>
     </Navbar>

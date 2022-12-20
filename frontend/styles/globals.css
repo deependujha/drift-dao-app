@@ -109,3 +109,7 @@ a {
     color-scheme: dark;
   }
 }
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+    background-color: red
+}
