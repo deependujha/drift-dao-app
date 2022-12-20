@@ -1,24 +1,32 @@
 import React from 'react'
-import {Navbar, Button} from 'flowbite-react'
+import { Navbar, Button } from 'flowbite-react'
+import { motion } from "framer-motion";
+
 
 const Navbar_01 = () => {
   return (
-    <Navbar fluid={true} rounded={false} className="sticky top-0 bg-opacity-30">
+    <Navbar fluid={true} rounded={false} className="sticky top-0 bg-zinc-900">
       <Navbar.Brand href="/">
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-          Drift
-        </span>
+        <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
+          <span className="self-center whitespace-nowrap text-3xl font-semibold dark:text-white">
+            Drift
+          </span>
+        </motion.div>
       </Navbar.Brand>
       <div className="flex md:order-2">
-        <Button>Get started</Button>
+        <Button size="lg" outline={true} gradientDuoTone="purpleToBlue">
+          candidate name
+        </Button>
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        <Navbar.Link href="/navbars" active={true}>
-          Home
+        <Navbar.Link
+          href="/mainpage"
+          active={true}
+          className="text-xl italic text-white"
+        >
+          A unified platform for all your DAOs
         </Navbar.Link>
-        <Navbar.Link href="/navbars">About</Navbar.Link>
-        <Navbar.Link href="/navbars">Contact</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );
