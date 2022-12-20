@@ -3,7 +3,7 @@ import { Navbar, Button } from 'flowbite-react'
 import { motion } from "framer-motion";
 
 
-const Navbar_01 = () => {
+const Navbar_01 = ({ currLeft, currRight }) => {
   return (
     <Navbar fluid={true} rounded={false} className="sticky top-0 bg-zinc-900">
       <Navbar.Brand href="/">
@@ -20,16 +20,12 @@ const Navbar_01 = () => {
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        <Navbar.Link
-          href="/mainpage"
-          active={true}
-          className="text-xl italic text-white"
-        >
-          A unified platform for all your DAOs
-        </Navbar.Link>
+        <div className="text-xl italic text-white">
+          {currLeft}__{currRight}
+        </div>
       </Navbar.Collapse>
     </Navbar>
   );
-}
+};
 
 export default Navbar_01

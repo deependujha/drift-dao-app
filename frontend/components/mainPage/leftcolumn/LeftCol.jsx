@@ -1,11 +1,17 @@
 import React from "react";
 import Image from "next/image";
 
-const LeftCol = () => {
+const LeftCol = ({ currLeft, setCurrLeft }) => {
   return (
     <div className="sticky top-0 w-36 h-screen">
       <div className="pt-16 grid justify-items-center text-center">
-        <div className="my-4">
+        <div
+          className="my-4"
+          onClick={() => {
+            setCurrLeft("polygon");
+          }}
+          style={{ cursor: "pointer" }}
+        >
           <Image
             src="/mainPageLogo/polygon.png"
             height={50}
@@ -15,7 +21,13 @@ const LeftCol = () => {
           />
           Polygon
         </div>
-        <div className="my-4">
+        <div
+          className="my-4"
+          onClick={() => {
+            setCurrLeft("ENS");
+          }}
+          style={{ cursor: "pointer" }}
+        >
           <Image
             src="/mainPageLogo/ens.png"
             height={50}
@@ -25,7 +37,13 @@ const LeftCol = () => {
           />
           ENS
         </div>
-        <div className="my-4">
+        <div
+          className="my-4"
+          onClick={() => {
+            setCurrLeft("Biconomy");
+          }}
+          style={{ cursor: "pointer" }}
+        >
           <Image
             src="/mainPageLogo/bico.png"
             height={50}
