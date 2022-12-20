@@ -1,5 +1,5 @@
 import React from "react";
-import {Card } from "flowbite-react";
+import { Card } from "flowbite-react";
 
 const RightCol = ({ currRight, setCurrRight }) => {
   return (
@@ -12,6 +12,11 @@ const RightCol = ({ currRight, setCurrRight }) => {
                 onClick={() => {
                   setCurrRight("chatroom");
                 }}
+                className={`${
+                  currRight === "chatroom"
+                    ? "text-base font-extrabold"
+                    : "text-white"
+                }`}
                 style={{ cursor: "pointer" }}
               >
                 <a>Chat room</a>
@@ -20,6 +25,11 @@ const RightCol = ({ currRight, setCurrRight }) => {
                 onClick={() => {
                   setCurrRight("forum");
                 }}
+                className={`${
+                  currRight === "forum"
+                    ? "text-base font-extrabold"
+                    : "text-white"
+                }`}
                 style={{ cursor: "pointer" }}
               >
                 <a>forum</a>
@@ -28,6 +38,11 @@ const RightCol = ({ currRight, setCurrRight }) => {
                 onClick={() => {
                   setCurrRight("RFP");
                 }}
+                className={`${
+                  currRight === "RFP"
+                    ? "text-base font-extrabold"
+                    : "text-white"
+                }`}
                 style={{ cursor: "pointer" }}
               >
                 <a>RFP</a>
@@ -36,6 +51,11 @@ const RightCol = ({ currRight, setCurrRight }) => {
                 onClick={() => {
                   setCurrRight("snapshot");
                 }}
+                className={`${
+                  currRight === "snapshot"
+                    ? "text-base font-extrabold"
+                    : "text-white"
+                }`}
                 style={{ cursor: "pointer" }}
               >
                 <a>snapshot</a>
@@ -44,6 +64,11 @@ const RightCol = ({ currRight, setCurrRight }) => {
                 onClick={() => {
                   setCurrRight("analytics");
                 }}
+                className={`${
+                  currRight === "analytics"
+                    ? "text-base font-extrabold"
+                    : "text-white"
+                }`}
                 style={{ cursor: "pointer" }}
               >
                 <a>analytics</a>

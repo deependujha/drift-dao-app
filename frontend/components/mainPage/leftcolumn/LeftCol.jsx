@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import DAOChannel from "../DAOChannel";
+import ExitButton from "./ExitButton";
 
 const LeftCol = ({ currLeft, setCurrLeft }) => {
   return (
@@ -12,14 +14,11 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
           }}
           style={{ cursor: "pointer" }}
         >
-          <Image
-            src="/mainPageLogo/polygon.png"
-            height={50}
-            width={60}
-            alt="myDao"
-            className="bg-white rounded-lg mb-1"
+          <DAOChannel
+            img="/mainPageLogo/polygon.png"
+            name="Polygon"
+            active={currLeft === "polygon"}
           />
-          Polygon
         </div>
         <div
           className="my-4"
@@ -28,14 +27,11 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
           }}
           style={{ cursor: "pointer" }}
         >
-          <Image
-            src="/mainPageLogo/ens.png"
-            height={50}
-            width={60}
-            alt="myDao"
-            className="bg-white rounded-lg mb-1"
+          <DAOChannel
+            img="/mainPageLogo/ens.png"
+            name="ENS"
+            active={currLeft === "ENS"}
           />
-          ENS
         </div>
         <div
           className="my-4"
@@ -44,25 +40,15 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
           }}
           style={{ cursor: "pointer" }}
         >
-          <Image
-            src="/mainPageLogo/bico.png"
-            height={50}
-            width={60}
-            alt="myDao"
-            className="bg-white rounded-lg mb-1"
+          <DAOChannel
+            img="/mainPageLogo/bico.png"
+            name="Biconomy"
+            active={currLeft === "Biconomy"}
           />
-          Biconomy
         </div>
       </div>
-      <div className="absolute bottom-20 right-12">
-        <a href="#">
-          <Image
-            src="/mainPageLogo/forward-button.png"
-            height={50}
-            width={50}
-            alt="load..."
-          />
-        </a>
+      <div>
+        <ExitButton />
       </div>
     </div>
   );

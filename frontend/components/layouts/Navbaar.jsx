@@ -1,20 +1,16 @@
-import React from 'react'
-import { Navbar, Button } from 'flowbite-react'
-import { motion } from "framer-motion";
-
+import React from "react";
+import { Navbar, Button } from "flowbite-react";
 
 const Navbar_01 = ({ currLeft, currRight }) => {
   return (
     <Navbar fluid={true} rounded={false} className="sticky top-0 bg-zinc-900">
       <Navbar.Brand href="/">
-        <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
-          <span className="self-center whitespace-nowrap text-3xl font-semibold dark:text-white">
-            Drift
-          </span>
-        </motion.div>
+        <span className="self-center whitespace-nowrap text-3xl font-semibold dark:text-white">
+          Drift
+        </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
-        <Button size="lg" outline={true} gradientDuoTone="purpleToBlue">
+        <Button outline={true} gradientDuoTone="purpleToBlue">
           candidate name
         </Button>
         <Navbar.Toggle />
@@ -28,4 +24,4 @@ const Navbar_01 = ({ currLeft, currRight }) => {
   );
 };
 
-export default Navbar_01
+export default Navbar_01;
