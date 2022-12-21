@@ -3,7 +3,7 @@ import { Card } from "flowbite-react";
 
 const RightCol = ({ currRight, setCurrRight }) => {
   return (
-    <div className="sticky top-0 h-screen w-64">
+    <div className="sticky top-0 h-screen">
       <div className="grid justify-items-center">
         <div className="max-w-xs mt-44">
           <Card className=" bg-black">

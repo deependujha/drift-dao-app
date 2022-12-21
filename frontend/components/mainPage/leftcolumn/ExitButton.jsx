@@ -16,7 +16,7 @@ const ExitButton = () => {
 			confirmButtonText: 'Yes, logout!',
 		}).then((result) => {
 			if (result.isConfirmed) {
-				router.push('/');
+				router.replace('/');
 			}
 		});
 	};

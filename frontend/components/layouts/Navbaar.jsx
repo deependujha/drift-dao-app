@@ -3,7 +3,7 @@ import { Navbar, Button } from "flowbite-react";
 
 const Navbar_01 = ({ currLeft, currRight }) => {
   return (
-    <Navbar fluid={true} rounded={false} className="sticky top-0 bg-zinc-900" style={{height:"7vh"}}>
+    <Navbar fluid={true} rounded={false} className="sticky top-0 bg-zinc-900">
       <Navbar.Brand href="/">
         <span className="self-center whitespace-nowrap text-3xl font-semibold dark:text-white">
           Drift
