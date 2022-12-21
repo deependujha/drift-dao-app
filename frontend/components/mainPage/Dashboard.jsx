@@ -24,7 +24,7 @@ const Dashboard = () => {
 							DAOs
 						</div>
 					</div>
-					<div style={{ height: '85vh' }} className="overflow-hidden">
+					<div style={{ height: '85.1vh' }} className="overflow-hidden">
 						<LeftCol currLeft={currLeft} setCurrLeft={setCurrLeft} />
 					</div>
 					<div
