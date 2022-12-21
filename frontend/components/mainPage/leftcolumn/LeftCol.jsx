@@ -1,16 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
-import DAOChannel from '../DAOChannel';
+import DAOChannel from './DAOChannel';
 import ExitButton from './ExitButton';
 import SimpleBar from 'simplebar-react';
 
 const LeftCol = ({ currLeft, setCurrLeft }) => {
 	return (
-		<div className="sticky top-0 w-36 overflow-auto ">
-			<SimpleBar style={{ maxHeight: "90vh" }}>
-				<div className="pt-16 grid text-center">
+		<div className="my-2">
+			<SimpleBar style={{ maxHeight: '90vh' }}>
+				<div className="grid text-center ">
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('polygon');
 						}}
@@ -23,7 +23,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('ENS');
 						}}
@@ -36,7 +36,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -49,7 +49,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -62,7 +62,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -75,7 +75,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -88,7 +88,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -101,7 +101,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -114,7 +114,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -127,7 +127,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -140,7 +140,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -153,7 +153,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -166,7 +166,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -179,7 +179,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -192,7 +192,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -205,7 +205,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -218,7 +218,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -231,7 +231,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -244,7 +244,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -257,7 +257,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -270,7 +270,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -283,7 +283,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -296,7 +296,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -309,7 +309,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -322,7 +322,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -335,7 +335,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -348,7 +348,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -361,7 +361,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -374,7 +374,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -387,7 +387,7 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 						/>
 					</div>
 					<div
-						className="my-4"
+						className=""
 						onClick={() => {
 							setCurrLeft('Biconomy');
 						}}
@@ -399,9 +399,6 @@ const LeftCol = ({ currLeft, setCurrLeft }) => {
 							active={currLeft === 'Biconomy'}
 						/>
 					</div>
-				</div>
-				<div>
-					<ExitButton />
 				</div>
 			</SimpleBar>
 		</div>
