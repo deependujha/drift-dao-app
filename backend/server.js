@@ -38,10 +38,9 @@ app.get('/getAllForumPostsOfADAO', async (req, res) => {
 
 app.post('/forumPost', async (req, res) => {
 	try {
-		const { dao, referingTo, title, content, createdBy } = req.body;
+		const { dao, title, content, createdBy } = req.body;
 		const newForumPost = new ForumPostModel({
 			dao,
-			referingTo,
 			title,
 			content,
 			createdBy,
