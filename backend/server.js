@@ -26,10 +26,20 @@ app.get('/getAllForumPosts', async (req, res) => {
 	}
 });
 
-app.get('/getAllForumPostsOfADAO', async (req, res) => {
+app.get('/getAllForumPostsOfADAO/:dao', async (req, res) => {
 	try {
-		const { dao } = req.body;
+		const { dao } = req.params;
 		const result = await ForumPostModel.find({ dao });
+		return res.send(result);
+	} catch (e) {
+		res.send(e);
+	}
+});
+
+app.get('/getAForumPost/:postId', async (req, res) => {
+	try {
+		const { postId } = req.params;
+		const result = await ForumPostModel.findOne({ _id: postId });
 		return res.send(result);
 	} catch (e) {
 		res.send(e);
@@ -131,7 +141,7 @@ app.post('/reactToForumPost', async (req, res) => {
 
 app.get('/getMyReactionOnPost', async (req, res) => {
 	try {
-		const { post, user } = req.body;
+		const { post, user } = req.query;
 		if (!(post && user)) {
 			res.send('null');
 			return;
