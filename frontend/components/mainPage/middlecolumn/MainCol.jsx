@@ -9,7 +9,7 @@ const MainCol = ({ currLeft, currRight }) => {
 	if (currRight == 'forum') {
 		return (
 			<div className="">
-				<ForumComponent />
+				<ForumComponent currLeft={currLeft}/>
 			</div>
 		);
 	}
