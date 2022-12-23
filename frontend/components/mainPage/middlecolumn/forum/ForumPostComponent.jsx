@@ -17,7 +17,6 @@ const ForumPostComponent = ({ pst }) => {
 			.get(`http://127.0.0.1:4000/getAForumPost/${pst._id}`)
 			.then(function (response) {
 				// handle success
-				console.log('printing response', response.data);
 				setSupport(response.data.support);
 				setDislike(response.data.dislike);
 			})
@@ -30,7 +29,7 @@ const ForumPostComponent = ({ pst }) => {
 	useEffect(() => {
 		axios
 			.get(
-				`http://127.0.0.1:4000/getMyReactionOnPost/?post=${pst._id}&user=Evil`
+				`http://127.0.0.1:4000/getMyReactionOnPost/?post=${pst._id}&user=Deependu_Jha`
 			)
 			.then((response) => {
 				setMyReaction(response.data.reaction);
@@ -42,12 +41,13 @@ const ForumPostComponent = ({ pst }) => {
 	}, []);
 
 	const supportBtnClicked = async () => {
-		console.log('support btn clicked');
+		// console.log('support btn clicked');
 		const currReact = myreaction === 1 ? 0 : 1;
+
 		axios
 			.post('http://127.0.0.1:4000/reactToForumPost', {
-				dao: pst._id,
-				user: 'Deependu Jha',
+				post: pst._id,
+				user: 'Deependu_Jha',
 				reaction: currReact,
 			})
 			.then(function (response) {
@@ -64,13 +64,13 @@ const ForumPostComponent = ({ pst }) => {
 		const currReact = myreaction === -1 ? 0 : -1;
 		axios
 			.post('http://127.0.0.1:4000/reactToForumPost', {
-				dao: pst._id,
-				user: 'Deependu Jha',
+				post: pst._id,
+				user: 'Deependu_Jha',
 				reaction: currReact,
 			})
 			.then(function (response) {
 				setMyReaction(currReact);
-				saverFunction()
+				saverFunction();
 			})
 			.catch(function (error) {
 				console.log(error);

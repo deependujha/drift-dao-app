@@ -25,13 +25,11 @@ const ForumComponent = ({ currLeft }) => {
 
 	const fetchPosts = async () => {
 		setFetchingPosts(true);
-		console.log('currleft is: ', currLeft);
 		axios
 			.get(`http://127.0.0.1:4000/getAllForumPostsOfADAO/${currLeft}`)
 			.then(function (response) {
 				// handle success
 				setPosts(response.data);
-				console.log(response);
 			})
 			.catch(function (error) {
 				// handle error
